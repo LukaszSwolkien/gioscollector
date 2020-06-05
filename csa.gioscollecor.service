@@ -1,0 +1,11 @@
+[Unit]
+Description=CSA GIOS-DATA_COLLECTOR
+After=syslog.target
+
+[Service]
+WorkingDirectory=/var/dev/gioscollector
+ExecStart=/var/dev/gioscollector/app.js
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
